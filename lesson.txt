@@ -1,0 +1,57 @@
+( Connection through cmd ( mysql -u root -p ))
+
+1. Sql is structed query language.   
+
+2. To create database 
+# syntax ( create database --name;)
+
+3. To show database 
+# syntax( show databases;)
+
+4. For using table
+# syntax ( use --tablename;)
+
+5. For creating table in database
+# syntax ( create table attdence(ID int(5),student_name varchar(255), subject char()))
+
+6. For insertion 
+# syntax ( insert into employe(Id,emp_name,salary) values(2,'affan',2000);)
+
+7. For getting data from tables 
+# syntax ( select *from tablename;)
+
+8. For getting specific colomn 
+# syntax ( select colomnname from tablename)
+
+9. not null its use to show that the value of any entity is not null 
+# syntax ( create table emp (emp_id int(5) not null ); )
+
+10 . Defualt Constrant its use to create a default value of column or entity 
+# syntax ( create table emp ( emp_age int(5) not null default 18, emp_name varchar(255) not null default  'undefined' );  )
+
+11. Alter in sql it's use to modify the objects in sql 
+#syntax for drop ( alter table emp drop column emp_id; )
+#syntax for add  ( alter table emp add emp_age int(5) not null)
+
+12. Alter command for modify , change , rename ;
+#syntax ( alter table employe modify emp_id int(6) not null default 7; )
+#syntax ( alter table employe change emp_id emp_ID int(5) not null default 5 ;)
+#syntax ( alter table employe rename table_name to table_name;)
+
+13. primary key 
+#syntax ( create table student (Roll_no int(5) not null , Name varchar(255), primary key(Roll_no) );)
+#syntax ( alter table employe_details add primary key (emp_id);)
+#syntax ( ALTER TABLE STUDENT DROP PRIMARY KEY;)
+
+14. Auto increment 
+#syntax (create table student (std_id int not null auto_increment , std_name varchar(255) not null , primary key (std_id));   )
+
+
+15. Where cluse its use find the particular data
+#syntax (SELECT emp_name FROM autodata WHERE emp_id=2;)
+
+16. update data in sql 
+#syntax (UPDATE autodata SET emp_address='pune' WHERE emp_id=1;)
+
+16. delete data in sql 
+#syntax (DELETE FROM table_name where id=2;)

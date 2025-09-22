@@ -1,0 +1,39 @@
+1. Data Definition Language (DDL)
+DDL commands are used to define or modify the structure of database objects like tables.
+
+CREATE: Creates a new database, table, view, or other object.
+
+ALTER: Modifies an existing database object.
+
+DROP: Deletes an entire database, table, or other object.
+
+TRUNCATE: Deletes all records from a table, but keeps the table's structure. It's faster than DELETE for this purpose.
+
+RENAME: Renames an object.
+
+
+
+2. Data Manipulation Language (DML)
+DML commands are used to manage data within tables.
+
+INSERT: Adds new rows of data into a table.
+
+UPDATE: Modifies existing data within a table.
+
+DELETE: Deletes rows from a table.  
+
+
+
+3. Data Query Language (DQL)
+DQL commands are used to retrieve data from a database.
+
+SELECT: Retrieves data from one or more tables. This is the most frequently used SQL command.
+
+
+
+4. Data Control Language (DCL)
+DCL commands are used to manage user permissions and access control.
+
+GRANT: Gives a user specific privileges to a database object.
+
+REVOKE: Removes a user's privileges from a database object.
