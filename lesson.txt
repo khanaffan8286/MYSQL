@@ -55,3 +55,37 @@
 
 16. delete data in sql 
 #syntax (DELETE FROM table_name where id=2;)
+
+
+17. SQL aggregate functions are functions that perform a calculation on a set of values and return a single value. They are commonly used with the GROUP BY clause to perform calculations on groups of rows.
+
+Common Aggregate Functions
+COUNT(): Counts the number of rows in a set.
+
+SELECT COUNT(column_name) FROM table_name;
+
+SUM(): Calculates the total sum of a numeric column.
+
+SELECT SUM(column_name) FROM table_name;
+
+AVG(): Calculates the average value of a numeric column.
+
+SELECT AVG(column_name) FROM table_name;
+
+MAX(): Finds the highest value in a column.
+
+SELECT MAX(column_name) FROM table_name;
+
+MIN(): Finds the lowest value in a column.
+
+SELECT MIN(column_name) FROM table_name;
+
+
+18. The ORDER BY clause in SQL is used to sort the result set of a SELECT statement in a specific order. You can sort by one or more columns in either ascending or descending order.
+
+#(syntax) ( select * from table_name order by table_cloumn asc/desc)
+
+19. The DISTINCT clause is used to return only unique values from a selected column or a set of columns. It removes duplicate rows from the result set.
+
+SELECT DISTINCT department FROM employees;
+SELECT * FROM products ORDER BY added_date DESC LIMIT 5;
