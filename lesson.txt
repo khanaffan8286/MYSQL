@@ -23,6 +23,10 @@
 8. For getting specific colomn 
 # syntax ( select colomnname from tablename)
 
+// for deleting column from the table use this
+(  ALTER TABLE TABLE_NAME DROP COLUMN COLUMN_NAME ; )
+
+
 9. not null its use to show that the value of any entity is not null 
 # syntax ( create table emp (emp_id int(5) not null ); )
 
@@ -89,3 +93,5 @@ SELECT MIN(column_name) FROM table_name;
 
 SELECT DISTINCT department FROM employees;
 SELECT * FROM products ORDER BY added_date DESC LIMIT 5;
+
+20. Concat this function used to merge two column or words for ex: select concat ('khan','affan');
