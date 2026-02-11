@@ -95,3 +95,22 @@ SELECT DISTINCT department FROM employees;
 SELECT * FROM products ORDER BY added_date DESC LIMIT 5;
 
 20. Concat this function used to merge two column or words for ex: select concat ('khan','affan');
+
+21. Foreign key ( foreign key is a column in a table that point to the primary key another table)
+ex: if we have customer table and product table both custmoer that one column in custmoer table is primary key and that column is foreign key product table )  custmoer cid   product cid 
+Syntax : 
+       { we have customer table having ( cid name phone ) 
+         now we creating new table with customer primary key cid  
+        CREATE TABLE product (pid INT NOT NULL PRIMARY KEY AUTO_INCREMENT , pname VARCHAR(255) , orderdate date ,
+        (now here you write the foreign key that you wanted to set you can write anything you want) cid INT , foreign key (cid) refrences customer(cid));
+
+22. Joins ( joins is used to combine column from two or more tables based on the releted column between them usulally a primary key and a foreign key)
+
+There are manly 4 types in joins
+
+1. INNER JOIN	Returns records that have matching values in both tables.
+syntax: SELECT * FROM customer INNER JOIN product on cunstomer.cid = product.cid ;  if wanted any specific column use where   ( where customer.cid=2;)
+
+2. LEFT JOIN	Returns all records from the left table, and the matched records from the right.
+3. RIGHT JOIN	Returns all records from the right table, and the matched records from the left.
+4. FULL JOIN	Returns all records when there is a match in either left or right table.
