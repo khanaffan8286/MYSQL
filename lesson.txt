@@ -108,9 +108,13 @@ Syntax :
 
 There are manly 4 types in joins
 
-1. INNER JOIN	Returns records that have matching values in both tables.
+1. INNER JOIN	Returns records that have matching values in both tables.Not showing which having empty value in other column.
 syntax: SELECT * FROM customer INNER JOIN product on cunstomer.cid = product.cid ;  if wanted any specific column use where   ( where customer.cid=2;)
 
 2. LEFT JOIN	Returns all records from the left table, and the matched records from the right.
+Syntax: SELECT * FROM customer LEFT JOIN product on customer.cid = prioduct.cid; -> it will show everything you having left table customer with all row col if you have empty row column it will also sow you;
+
 3. RIGHT JOIN	Returns all records from the right table, and the matched records from the left.
+Syntax: SELECT * FROM customer 
+
 4. FULL JOIN	Returns all records when there is a match in either left or right table.
