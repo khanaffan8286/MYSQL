@@ -65,6 +65,10 @@ Pattern,Meaning,Example Matches
 '_r%',"Has ""r"" in the second position","""area"", ""iron"", ""tree"""
 'a__%',"Starts with ""a"" and is at least 3 chars long","""ads"", ""array"", ""apple"""
 
+15.2. BETWEEN ( The BETWEEN operator is used to filter the result set within a specific range )
+Syntax : SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2; 
 
 16. update data in sql 
 #syntax (UPDATE autodata SET emp_address='pune' WHERE emp_id=1;)
