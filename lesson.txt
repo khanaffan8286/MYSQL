@@ -54,6 +54,18 @@
 15. Where cluse its use find the particular data
 #syntax (SELECT emp_name FROM autodata WHERE emp_id=2;)
 
+15.1.  LIKE OPREATOR ( In SQL, the LIKE operator is a logical operator used in a WHERE clause to search for a specified pattern in a column.) 
+Synatx : SELECT * FROM Products
+WHERE ProductCode LIKE '_B%';
+
+Pattern,Meaning,Example Matches
+'a%',"Starts with ""a""","""apple"", ""alpha"", ""a"""
+'%a',"Ends with ""a""","""data"", ""pizza"", ""replica"""
+'%or%',"Has ""or"" in any position","""fork"", ""order"", ""world"""
+'_r%',"Has ""r"" in the second position","""area"", ""iron"", ""tree"""
+'a__%',"Starts with ""a"" and is at least 3 chars long","""ads"", ""array"", ""apple"""
+
+
 16. update data in sql 
 #syntax (UPDATE autodata SET emp_address='pune' WHERE emp_id=1;)
 
