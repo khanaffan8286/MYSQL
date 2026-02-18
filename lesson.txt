@@ -127,9 +127,16 @@ A CROSS JOIN returns the Cartesian Product of the two tables. This means it matc
 Syntax : SELECT * FROM customer CROSS JOIN product; - > it will combile every column with other column all possibilty will come here.
 
 
-
 23. TRUNCATE ( It is used to removed all the rows from the table in a single command )
 Synatx : TRUNCTE TABLE customer;
+
+
+24. ALIASES ( In sql aliases is used to write the temparary name to table or column )
+Synatx : SELECT id as customer_identety from customer;
+
+
+Question answer ->>
+
 
 
 
