@@ -115,6 +115,25 @@ syntax: SELECT * FROM customer INNER JOIN product on cunstomer.cid = product.cid
 Syntax: SELECT * FROM customer LEFT JOIN product on customer.cid = prioduct.cid; -> it will show everything you having left table customer with all row col if you have empty row column it will also sow you;
 
 3. RIGHT JOIN	Returns all records from the right table, and the matched records from the left.
-Syntax: SELECT * FROM customer 
+Syntax: SELECT * FROM customer RIGHT JOIN product on customer.cid = prioduct.cid;->it will show everything you having right table product with all
 
 4. FULL JOIN	Returns all records when there is a match in either left or right table.
+Synatx : SELECT * FROM Customers
+FULL OUTER JOIN Orders ON Customers.id = Orders.customer_id;
+
+
+5. CROSS JOIN (The "Everything" Join)
+A CROSS JOIN returns the Cartesian Product of the two tables. This means it matches every single row from Table A with every single row from Table B.
+Syntax : SELECT * FROM customer CROSS JOIN product; - > it will combile every column with other column all possibilty will come here.
+
+
+
+23. TRUNCATE ( It is used to removed all the rows from the table in a single command )
+Synatx : TRUNCTE TABLE customer;
+
+
+
+
+
+
+
